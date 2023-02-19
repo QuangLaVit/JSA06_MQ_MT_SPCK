@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    position: relative;
+    letter-spacing: 0.04em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #151320;
+    height: 100vh;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sticky {
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 0, 30);
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 211, 195, 0.5);
+    color: rgb(255, 200, 133);
+}
+
+.mySlides {
+    width: 100%;
+    display: none;
+}
+
+.slideshow {
+    text-align: center;
+    padding: 0px 35%;
+}
+
+.title {
+    font-size: 350%;
+}
+
+.about {
+    font-size: 25px;
+    color: antiquewhite;
+    text-align: center;
+    display: inline;
+    margin: 100px;
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+.about h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery {
+    text-align: center;
+
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.gallery-container img {
+    width: 25%;
+}
+
+.container h2 {
+    margin-bottom: 5px;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.container1 {
+    padding: 40px 0 40px 0;
+}
+
+#span1 :hover {
+    color: rgb(0, 217, 255);
+}
+
+#sendButton {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col imput {
+    padding: 3px 3px 3px 3px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+
+.card {
+    background-color: #1c1b29;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container2 {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container2 img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.container2:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card1>.container2:after {
+    background-image: linear-gradient(135deg,
+            #0bda007b,
+            #1ab000b8);
+}
+
+.card2>.container2:after {
+    background-image: linear-gradient(135deg,
+            #ffad7eb9,
+            #ff9742aa);
+}
+
+.card3>.container2:after {
+    background-image: linear-gradient(135deg,
+            #405000a3,
+            #2a490083);
+}
+
+.card4>.container2:after {
+    background-image: linear-gradient(135deg,
+            #00dacfab,
+            #0082c4d9);
+}
+
+.card5>.container2:after {
+    background-image: linear-gradient(135deg,
+            #ffad7e94,
+            #ff821cdb);
+}
+
+.card6>.container2:after {
+    background-image: linear-gradient(135deg,
+            #ffac1d78,
+            #f84f1ca1);
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details>h6 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 9px;
+    margin: 8px 0 13px 0;
+}
+
+.details>h3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p {
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.Butall {
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.Butall:before {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, transparent 50%);
+    top: 0;
+    bottom: 0;
+    transform: skew(-45deg);
+    left: -450px;
+    transition: 1%;
+}
+
+.Butall:hover::before {
+    left: 450%;
+}
+
+.But {
+    background-color: rgba(111, 111, 111, 0.75);
+}
+
+#sss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    padding: 50px 100px 50px 100px;
+}
+
+/* .container {
+ position: relative;
+    z-index: 1000;
+    width: 100;
+    max-width: 1000px;
+    padding: 50px 100px 50px 100px;
+    background: rgba(255, 221, 153, 0.75);
+    box-shadow: 0 25px 25px rgba(255, 221, 153, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(red, green, blue, 0.1);
+    border-bottom: 1px solid rgba(red, green, blue, 0.1);
+    border-radius: 10px;
+    
+} */

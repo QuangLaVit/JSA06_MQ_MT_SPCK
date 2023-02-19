@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MUSIC CORE</title>
+    <link rel="stylesheet" href="1style.css">
+    <link rel="stylesheet" href="alpha.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="topnav" id="nav">
+            <a class="active" href="1index.html">Nhà</a>
+            <a href="1index.html">Nghe Nhạc</a>
+            <a href="1index.html">Về Chúng Tôi</a>
+            <a href="1index.html">Thành Viên</a>
+            <a href="1index.html">Liên Hệ</a>
+            <!-- <input type="text" placeholder="Search..."> -->
+        </nav>
+    </header>
+    <div class="music-player">
+        <button id="playlist">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <img id="song-image" src="make-me-move.jpg" />
+        <div class="song-details">
+            <p id="song-name">Build A B*tch</p>
+            <p id="song-artist">Bella Poarch</p>
+        </div>
+        <div class="player-options">
+            <button id="shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+            <button id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="pause" class="hide">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button id="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+            <button id="repeat">
+                <i class="fa-solid fa-repeat"></i>
+            </button>
+        </div>
+        <audio id="audio" preload="metadata"></audio>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
+        <div class="time-container">
+            <span id="current-time">0:00</span>
+            <span id="max-duration">0:00</span>
+        </div>
+        <div id="playlist-container" class="hide">
+            <button id="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="wrapper">
+                <div class="scrollbar" id="style-default">
+                    <div class="force-overflow">
+                        <ul id="playlist-songs"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Script -->
+        <script src="Bella+Poarch.js"></script>
+</body>
+
+</html>
